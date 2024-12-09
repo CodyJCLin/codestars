@@ -79,7 +79,7 @@ export const Items = ({
 
         <div className="flex-1">
           <p className="text-base font-bold text-neutral-700 lg:text-xl">
-            Unlimited hearts
+            Codestars Pro
           </p>
         </div>
 

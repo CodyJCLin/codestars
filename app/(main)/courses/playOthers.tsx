@@ -15,7 +15,7 @@ type ListProps = {
   activeCourseId?: typeof userProgress.$inferSelect.activeCourseId;
 };
 
-export const List = ({ courses, activeCourseId }: ListProps) => {
+export const Li = ({ courses, activeCourseId }: ListProps) => {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
 
@@ -31,7 +31,9 @@ export const List = ({ courses, activeCourseId }: ListProps) => {
 
   return (
     <div className="grid grid-cols-2 gap-4 pt-6 lg:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
-      {courses.map((course) => (
+      {courses
+      .filter(course => course.id === 2)
+      .map((course) => (
         <Card
           key={course.id}
           id={course.id}

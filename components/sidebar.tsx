@@ -30,14 +30,16 @@ export const Sidebar = ({ className }: SidebarProps) => {
       </Link>
 
       <div className="flex flex-1 flex-col gap-y-2">
-        <SidebarItem label="Learn" href="/learn" iconSrc="/learn.svg" />
+        <SidebarItem label="Game Modes" href="/learn" iconSrc="/learn.svg" />
         <SidebarItem
           label="Leaderboard"
           href="/leaderboard"
           iconSrc="/leaderboard.svg"
         />
-        <SidebarItem label="Quests" href="/quests" iconSrc="/quests.svg" />
+        <SidebarItem label="Reward Levels" href="/quests" iconSrc="/quests.svg" />
         <SidebarItem label="Shop" href="/shop" iconSrc="/shop.svg" />
+        <SidebarItem label="Pro Features" href="/pro" iconSrc="/lock.svg" />
+        <SidebarItem label="Add Friends" href="/friends" iconSrc="/add-user-friends.svg" />
       </div>
 
       <div className="p-4">
