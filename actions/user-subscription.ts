@@ -40,7 +40,7 @@ export const createStripeUrl = async () => {
             name: "CodeStars Pro",
             description: "Unlimited hearts.",
           },
-          unit_amount: 2000, // $20.00 USD
+          unit_amount: 1299, // $20.00 USD
           recurring: {
             interval: "month",
           },
